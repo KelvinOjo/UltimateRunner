@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\KelvinPlayGround\Script\Timer.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\KelvinPlayGround\Script\Endcollider.cs">
     <Files>
-      <File FileName="UltimateRunner.sln" Line="1" Column="1" />
-      <File FileName="Assets\KelvinPlayGround\Script\Timer.cs" Line="21" Column="75" />
+      <File FileName="Assets\KelvinPlayGround\Script\TrackManager.cs" Line="13" Column="9" />
+      <File FileName="Assets\KelvinPlayGround\Script\GameLength.cs" Line="7" Column="30" />
+      <File FileName="Assets\KelvinPlayGround\Script\Endcollider.cs" Line="29" Column="1" />
+      <File FileName="Assets\KelvinPlayGround\Script\RespwnScript\respawnPlayer.cs" Line="54" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

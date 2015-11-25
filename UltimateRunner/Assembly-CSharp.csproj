@@ -49,25 +49,33 @@
      <Compile Include="Assets\CountDown\Script\SetCountDown.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\CollisionTracker.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\CollisionTracker2.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\CrystalScript\cristalColider.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\CrystalScript\cristalCounter.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\CrystalScript\cristalCounter2.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\Endcollider.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\GameLength.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\PlayerControlls.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawn2.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawn3.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawn4.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawn5.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawn6.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawnPlayer.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\spawn7.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\Timer.cs" />
-     <Compile Include="Assets\KelvinPlayGround\Script\respawnPlayer.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\TrackColider2.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\TrackManager.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\Trackcollider.cs" />
      <Compile Include="Assets\StartMenu\StrartMenuScript\MenuScript.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

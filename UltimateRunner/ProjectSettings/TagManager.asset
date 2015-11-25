@@ -6,6 +6,10 @@ TagManager:
   tags:
   - SmallWall
   - BigWall
+  - f1
+  - f2
+  - player
+  - player2
   layers:
   - Default
   - TransparentFX
