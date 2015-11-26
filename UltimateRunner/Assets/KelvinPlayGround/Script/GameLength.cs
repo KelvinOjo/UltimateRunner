@@ -4,7 +4,7 @@ using System.Collections;
 public class GameLength {
 
 
-	private static  int name = 1;
+	private static  int name;
 	public int Name{
 
 		get

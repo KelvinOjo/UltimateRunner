@@ -27,6 +27,14 @@ public class Endcollider : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if(enter == 2){
+
+			Application.LoadLevel(3);
+			//print("ending game.");
+
+
+		}
+
 	
 	}
 
@@ -36,6 +44,7 @@ public class Endcollider : MonoBehaviour {
 
 			enter++;
 			print(" p1 end" + enter);
+			Destroy(Player);
 
 		}
 
@@ -43,6 +52,7 @@ public class Endcollider : MonoBehaviour {
 			
 			enter++;
 			print(" p2 end" + enter);
+			Destroy(Player2);
 
 			
 		}

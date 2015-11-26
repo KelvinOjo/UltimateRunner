@@ -62,10 +62,13 @@
      <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawn6.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawnPlayer.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\spawn7.cs" />
-     <Compile Include="Assets\KelvinPlayGround\Script\Timer.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\Timerscript\Timer.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\Timerscript\Timer2.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\TrackColider2.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\TrackManager.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\Trackcollider.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\endsript\SaveScores.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\endsript\calculateScores.cs" />
      <Compile Include="Assets\StartMenu\StrartMenuScript\MenuScript.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour {
 
 	public Text counterText;
 
-	public float seconds, minutes;
+	public static float seconds, minutes;
 
 	void Start () {
 
@@ -16,9 +16,15 @@ public class Timer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		timer ();
+	
+	}
+
+	void timer(){
+
 		minutes = (int)(Time.timeSinceLevelLoad / 60f);
 		seconds = (int)(Time.timeSinceLevelLoad % 60f);
 		counterText.text = minutes.ToString ("00") + ":" + seconds.ToString("00");
-	
 	}
 }

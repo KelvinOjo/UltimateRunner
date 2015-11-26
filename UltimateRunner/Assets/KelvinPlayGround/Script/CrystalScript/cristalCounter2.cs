@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class cristalCounter2 : MonoBehaviour {
 
 
-	public static int p2c = 0;
+	public static float p2c = 0;
 	public Text counterText2;
 	// Use this for initialization
 	void Start () {

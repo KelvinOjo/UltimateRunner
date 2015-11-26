@@ -225,12 +225,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 196018314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adb0032ba2ef109469e5424ff74e89d0, type: 3}
+  m_Script: {fileID: 11500000, guid: ba16c9cb4aa86694a8cc821ea3abed14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterText: {fileID: 196018315}
-  seconds: 0
-  minutes: 0
+  counterText2: {fileID: 196018315}
+  seconds2: 0
+  minutes2: 0
 --- !u!1 &221292591
 GameObject:
   m_ObjectHideFlags: 0

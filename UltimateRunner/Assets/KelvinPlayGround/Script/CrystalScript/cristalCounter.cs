@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class cristalCounter : MonoBehaviour {
 
-	public static int p1c = 0;
+	public static float p1c = 0;
 
 
 	public Text counterText1;
