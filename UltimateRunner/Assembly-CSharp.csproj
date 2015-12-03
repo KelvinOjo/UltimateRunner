@@ -54,7 +54,9 @@
      <Compile Include="Assets\KelvinPlayGround\Script\CrystalScript\cristalCounter2.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\Endcollider.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\GameLength.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\LordZiron.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\PlayerControlls.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\FallAudio.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawn2.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawn3.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\RespwnScript\respawn4.cs" />
