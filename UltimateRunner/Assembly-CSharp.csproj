@@ -49,6 +49,7 @@
      <Compile Include="Assets\CountDown\Script\SetCountDown.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\CollisionTracker.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\CollisionTracker2.cs" />
+     <Compile Include="Assets\KelvinPlayGround\Script\CrystalScript\Cristalsound.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\CrystalScript\cristalColider.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\CrystalScript\cristalCounter.cs" />
      <Compile Include="Assets\KelvinPlayGround\Script\CrystalScript\cristalCounter2.cs" />

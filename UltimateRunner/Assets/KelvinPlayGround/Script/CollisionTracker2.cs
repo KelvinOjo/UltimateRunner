@@ -3,8 +3,8 @@ using System.Collections;
 
 public class CollisionTracker2 : MonoBehaviour {
 
-	public UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl control;
-	public UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl control2;
+	private UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl control;
+	private UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl control2;
 
 
 	private float timer = 7.0f;
@@ -12,57 +12,52 @@ public class CollisionTracker2 : MonoBehaviour {
 	private bool startTime = false;
 	private bool startTime2 = false;
 
-	void Start()
-	{
-
+	//-----------------------------------------------------
+	void Awake(){
+		GameObject player1GO = GameObject.FindWithTag ("player");
+		GameObject player2GO = GameObject.FindWithTag ("player2");
+		
+		control = player1GO.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl>();
+		control2 = player2GO.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl>();
 	}
 
-
-
+	//-----------------------------------------------------
 	void OnTriggerEnter(Collider coll){
-		
-		if (coll.tag == "player") 
+		print ("CollisionTracker hit by something tagged: " + coll.tag);
+		if (coll.CompareTag("player")) 
 		{
 			control.SetRunningSpeed_SLOW ();
 			startTime = true;
-			Debug.Log (gameObject.name +" was triggered by[Small wall hit]" + coll.gameObject.name);
+			GetComponent<AudioSource>().Play();
+			//Debug.Log (gameObject.name +" was triggered by[Small wall hit]" + coll.gameObject.name);
 		}
-
-		if (coll.tag == "player2") 
+		if (coll.CompareTag("player2")) 
 		{
 			control2.SetRunningSpeed_SLOW ();
 			startTime2 = true;
-			Debug.Log (gameObject.name +" was triggered by[Small wall hit]" + coll.gameObject.name);
+			GetComponent<AudioSource>().Play();
+			//Debug.Log (gameObject.name +" was triggered by[Small wall hit]" + coll.gameObject.name);
 		}
 
-		
-		
 	}
 
-
-	
-
-	
-	// Update is called once per frame
+	//-----------------------------------------------------
 	void Update () {
 
-		p1timmer ();
-		p2timmer ();
-	
-	}
+		P1timmer ();
+		P2timmer ();
 
+		}
 
-	void p1timmer()
+	//-----------------------------------------------------
+	void P1timmer()
 	{
-		
-		//timer -= Time.deltaTime;
 		if(startTime == true)
 		{
 			timer -= Time.deltaTime;
-			Debug.Log(timer + "coll timmmmer");
+			//Debug.Log(timer + "coll timmmmer");
 		}
 		if(timer <= 0){
-			
 			startTime = false;
 			timer = 7.0f;
 			control.SetRunningSpeed_FAST();
@@ -70,11 +65,9 @@ public class CollisionTracker2 : MonoBehaviour {
 		
 	}
 
-
-
-	void p2timmer()
+	//-----------------------------------------------------
+	void P2timmer()
 	{
-		
 		//timer -= Time.deltaTime;
 		if(startTime2 == true)
 		{
@@ -82,17 +75,11 @@ public class CollisionTracker2 : MonoBehaviour {
 			Debug.Log(timer2 + "coll palyer 2 timmmmer");
 		}
 		if(timer2 <= 0){
-			
 			startTime2 = false;
 			timer2 = 7.0f;
 			control2.SetRunningSpeed_FAST();
 		}
 		
 	}
-
-
-
-
-
 
 }

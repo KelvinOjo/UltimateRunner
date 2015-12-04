@@ -9,10 +9,10 @@ public class MenuScript : MonoBehaviour {
         public global variables for the quit menu canvas.
     */
 
-    public Canvas quitMenu, gamemode, gamelength;
+    public Canvas quitMenu, gamemode, gamelength, instructions;
     public Button startText;
     public Button exitText;
-	public Button singlePlayer , multiplayer, quickgame , longgame;
+	public Button singlePlayer , multiplayer, quickgame , longgame , closeins;
 
 	GameLength gl = new GameLength();
 
@@ -24,9 +24,12 @@ public class MenuScript : MonoBehaviour {
         quitMenu = quitMenu.GetComponent<Canvas>();
 		gamemode = gamemode.GetComponent<Canvas>();
 		gamelength = gamelength.GetComponent<Canvas>();
+		instructions = instructions.GetComponent<Canvas>();
+
         quitMenu.enabled = false;
 		gamemode.enabled = false;
 		gamelength.enabled = false;
+		instructions.enabled = false;
 
         startText = startText.GetComponent<Button>();
         exitText = startText.GetComponent<Button>();
@@ -37,6 +40,9 @@ public class MenuScript : MonoBehaviour {
 
 		quickgame = startText.GetComponent<Button>();
 		longgame = startText.GetComponent<Button>();
+
+
+		closeins = startText.GetComponent<Button>();
 
 
 
@@ -79,16 +85,15 @@ public class MenuScript : MonoBehaviour {
 	}
 
 	public void SinglePlayerPress(){
-		gamemode.enabled = false;
-		startText.enabled = true;
-		exitText.enabled = true;
+		instructions.enabled = true;
+		closeins.enabled = true;
+		//exitText.enabled = true;
 	}
 
 	public void gameselected(){
 
 		gamemode.enabled = false;
 		gamelength.enabled = true;
-
 
 	}
 
@@ -110,6 +115,11 @@ public class MenuScript : MonoBehaviour {
 		
 	}
 
+	public void close(){
+		instructions.enabled = false;
+		closeins.enabled = false;
+	}
+
    
 
 	public void StartGame() {
@@ -121,6 +131,8 @@ public class MenuScript : MonoBehaviour {
     public void ExitGame() {
 
         Application.Quit();
+
+
 
     }
 

@@ -6,7 +6,7 @@ public class cristalColider : MonoBehaviour {
 
 
 
-
+	public Cristalsound csound;
 
 
 
@@ -34,6 +34,7 @@ public class cristalColider : MonoBehaviour {
 			
 
 			cristalCounter2.p2c++;
+		
 			Destroy(this.gameObject);
 
 
